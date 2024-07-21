@@ -1,0 +1,38 @@
+body {
+  background-color: #2d3d50;
+}
+
+.header {
+  color: #fff;
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  row-gap: 40px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.sound-button {
+  height: 70px;
+  width: 70px;
+  background-color: #3498db;
+  border: none;
+  border-radius: 10%;
+  color: #fff;
+  font-size: 30px;
+}
+
+.sound-button:active {
+  transform: translate(3px, 3px);
+  background-color: #256a99;
+}
