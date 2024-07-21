@@ -1,24 +1,32 @@
-// Wait for the DOM to fully load before executing the script
 document.addEventListener("DOMContentLoaded", () => {
-  // Select all elements with the class 'sound-button'
   const buttons = document.querySelectorAll(".sound-button");
+  const keyToSoundMap = {};
 
-  // Iterate over each button
   buttons.forEach((button) => {
-    // Add a click event listener to each button
+    const soundFile = button.getAttribute("data-sound");
+    const key = button.getAttribute("data-key");
+    keyToSoundMap[key] = button;
+
+    // Add click event listener to each button
     button.addEventListener("click", () => {
-      // Get the value of the 'data-sound' attribute from the clicked button
-      const soundFile = button.getAttribute("data-sound");
-      // Play the sound associated with the button
       playSound(soundFile);
+      button.classList.add("active");
+      setTimeout(() => button.classList.remove("active"), 200); // Remove 'active' class after 200ms
     });
   });
 
-  // Function to play a sound file
   function playSound(soundFile) {
-    // Create a new Audio object with the path to the sound file
     const audio = new Audio(`sounds/${soundFile}.wav`);
-    // Play the sound
     audio.play();
   }
+
+  document.addEventListener("keydown", (event) => {
+    const key = event.key.toLowerCase();
+    if (keyToSoundMap[key]) {
+      const button = keyToSoundMap[key];
+      playSound(button.getAttribute("data-sound"));
+      button.classList.add("active");
+      setTimeout(() => button.classList.remove("active"), 200); // Remove 'active' class after 200ms
+    }
+  });
 });
