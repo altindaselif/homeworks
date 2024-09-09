@@ -1,0 +1,99 @@
+#comments {
+    padding-top: 60px;
+    background-color: rgb(241, 249, 253);
+    transform: translateZ(-1px);
+    padding-bottom: 20px;
+}
+
+#comments h2 {
+    margin-top: 50px;
+    color: #355592;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+
+#comments .htext {
+    color: rgb(80, 80, 80);
+    margin-top: 60px;
+    margin-bottom: 40px;
+    padding: 0 60px;
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#comments .underline {
+    margin-top: 10px;
+    background-color: orange;
+    border-radius: 5px;
+    height: 10px;
+    width: 120px;
+}
+
+.comment {
+    margin: 20px;
+    margin-bottom: 60px;
+}
+
+.client {
+    display: flex;
+    align-items: center;
+}
+
+.client img {
+    border-radius: 50%;
+    width: 60px;
+    height: auto;
+}
+
+.client-name {
+    margin-left: 20px;
+}
+
+.client-name h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.comment-card {
+    position: relative;
+    color: white;
+    background-color: #355592;
+    padding: 15px 30px;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.comment-card::before {
+    content: "";
+    position: absolute;
+    background-color: #678cc4;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+    width: 40px;
+    height: 40px;
+    left: 0;
+    bottom: -2.48rem;
+}
+
+.comment-card::after {
+    content: "";
+    position: absolute;
+    background-color: #678cc4;
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+    width: 40px;
+    height: 40px;
+    right: 0;
+    bottom: -2.48rem;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+}

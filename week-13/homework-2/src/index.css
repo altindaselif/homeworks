@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.bodybg img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container img {
+  width: 300px;
+}
+
+input {
+  width: 300px;
+  height: 40px;
+  border: 6px solid transparent;
+  outline: 6px solid transparent;
+  border-radius: 60px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s;
+  margin-bottom: 100px;
+}
+
+input:focus {
+  border: 6px solid black;
+  outline: 6px solid gold;
+}
+
+.shipcard {
+  margin: 40px;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 300px;
+  background: white;
+  border: 3px solid gold;
+  border-radius: 5px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.shipcard:hover {
+  scale: 120%;
+}
+
+.shipcard img {
+  position: absolute;
+  top: -10%;
+  width: 110%;
+  height: auto;
+}
+
+.shipname {
+  margin-top: 100px;
+  text-align: center;
+  width: 100%;
+}
+
+
+.load-button {
+  background-color: white;
+  height: 50px;
+  width: 150px;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 800;
+  transition: all 0.2s;
+  cursor: pointer;
+  margin: 100px;
+}
+
+.load-button:hover {
+  background-color: gold;
+}
+
+.load-button:active {
+  scale: 90%;
+}
+
+.ship-info-card {
+  margin: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 600px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.ship-info-card-info {
+  margin-top: 250px;
+}
+
+.ship-info-card img {
+  position: absolute;
+  top: -10%;
+  left: -5%;
+  width: 110%;
+  height: auto;
+}
+
+.back-button {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background-color: white;
+  height: 50px;
+  width: 150px;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 800;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: gold;
+}
+
+.back-button:active {
+  scale: 90%;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 80%;
+}
+
+.loading-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  background-color: gold;
+  width: 0%;
+  transition: width 0.3s ease;
+  z-index: 1000;
+}
+
+.shipcard-info {
+  font-size: 12px;
+}
+
+.shipcard-info-h {
+  font-weight: bold;
+  border-bottom: 3px solid gold;
+  width: 100%;
+}
+
+.shipInfo-h {
+  font-weight: bold;
+}
+
+.shipInfo-s {
+  font-weight: 400;
+}

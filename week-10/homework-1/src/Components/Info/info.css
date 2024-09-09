@@ -1,0 +1,24 @@
+#info {
+    background-color: rgb(241, 249, 253);
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.info-object {
+    background-color: white;
+    text-align: center;
+    padding: 40px;
+    margin: 15px;
+}
+
+.infotxt1 {
+    color: rgb(48, 73, 148);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.infotxt2 {
+    font-size: 24px;
+    font-weight: 800;
+}

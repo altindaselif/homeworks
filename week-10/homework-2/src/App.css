@@ -1,0 +1,222 @@
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    margin: 100px;
+    position: absolute;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 512px;
+    height: 480px;
+    border-radius: 10px;
+}
+
+.popup h3 {
+    font-family: "Exo 2", sans-serif;
+    font-size: 24px;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.popup input {
+    background-color: whitesmoke;
+    outline: 3px solid transparent;
+    border: none;
+    width: 20rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: 0.15s;
+}
+
+.popup input:focus {
+    outline: 3px solid royalblue;
+}
+
+.popup button{
+    margin-top: 1rem;
+    color: white;
+    font-size: 16px;
+    font-weight: 900;
+    background-color: orange;
+    width: 8rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+.popup button:hover{
+    background-color: #ffc400;
+}
+
+.dice-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+
+.dice-container img {
+    width: 10rem;
+    height: auto;
+}
+
+.dice-rolling {
+    animation: 0.2s anim-roll ease infinite;
+}
+
+@keyframes anim-roll {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    20% {
+        transform: rotateZ(72deg);
+    }
+    40% {
+        transform: rotateZ(144deg);
+    }
+    60% {
+        transform: rotateZ(216deg);
+    }
+    80% {
+        transform: rotateZ(288deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+
+}
+
+.dice-container h3 {
+    color: lightgreen;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.win-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: goldenrod;
+    text-shadow: 0px 5px 2px #000;
+    animation: 1s anim-popoutin ease infinite;
+}
+@keyframes anim-popoutin {
+    0% {
+        transform: scale(1);
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    50% {
+        transform: scale(1.02);
+        text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.4);
+    }
+    100% {
+        transform: scale(1);
+        text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+    }
+
+}
+
+.lose-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #e80808;
+    text-shadow: 0px 0px 30px #ad0000;
+    animation: 0.1s anim-shake;
+}
+
+@keyframes anim-shake {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: translateX(3px);
+    }
+    50% {
+        transform: translateY(-4px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateY(6px);
+    }
+}
+
+.draw-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #0871e8;
+    text-shadow: 0px 0px 5px #003086;
+    animation: 0.5s anim-popoutin;
+    transition: 0.15s;
+}
+
+.roll-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    text-shadow: 0px 0px 5px #383838;
+}
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+.button-container button{
+    color: white;
+    font-size: 24px;
+    font-weight: 900;
+    background-color: orange;
+    width: 25rem;
+    height: 3rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+.button-container button:hover{
+    background-color: #ffc400;
+}

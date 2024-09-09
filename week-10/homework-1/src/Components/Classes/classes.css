@@ -1,0 +1,148 @@
+#classes {
+    padding-top: 0px;
+}
+
+#classes .classes-bg {
+    position: absolute;
+    top: 0 auto;
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    clip-path: polygon(40% 0%, 100% 0%, 100% 100%, 60% 100%);
+    z-index: -1;
+}
+
+#classes h2 {
+    margin-top: 110px;
+    color: #355592;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+
+#classes img {
+    width: 500px;
+    height: 350px;
+}
+
+.underline {
+    margin-top: 10px;
+    background-color: orange;
+    border-radius: 5px;
+    height: 10px;
+    width: 120px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#classes .htext {
+    color: rgb(80, 80, 80);
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 0 60px;
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.classes-buttons {
+    gap: 40px;
+}
+
+.classes-buttons button {
+    display: inline-block;
+    position: relative;
+    padding: 10px 0;
+    width: 180px;
+    background: #355592;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.tabBtn:hover {
+    background-color: orange;
+}
+
+.tabBtn.active {
+    background-color: orange;
+    box-shadow: 0 0 5px orange;
+}
+
+.tabBtn.active:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: orange;
+    border-bottom: 0;
+    -webkit-filter: drop-shadow(0 0 5px orange);
+    margin-left: -10px;
+    margin-bottom: -9px;
+}
+
+.classTab {
+    display: flex;
+    margin-top: 60px;
+}
+
+
+.hide {
+    display: none;
+}
+
+.classTab h3 {
+    margin-bottom: 30px;
+    color: rgb(80, 80, 80);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.classTab p {
+    color: rgb(80, 80, 80);
+    margin-top: 15px;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #classes .classes-bg {
+        height: 190%;
+    }
+
+    .classes-buttons button{
+        width: 170px;
+    }
+
+    .classTab p {
+        padding: 10px;
+    }
+    .classTab h3 {
+        padding: 10px;
+    }
+
+    .classTab img {
+        width: 100%;
+        height: auto;
+    }
+}
