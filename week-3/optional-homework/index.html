@@ -1,68 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Survey Form</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <h1 id="title">Survey Form For CSS Practice</h1>
-    <p id="description">Please, fill in the form properly.</p>
-
-    <form id="survey-form">
-      <!-- Full Name -->
-      <label id="name-label" for="name">Full Name:</label><br />
-      <input type="text" id="name" name="name" required /><br />
-
-      <!-- E-Mail -->
-      <label id="email-label" for="email">Mail:</label><br />
-      <input type="email" id="email" name="email" required /><br />
-
-      <!-- Age -->
-      <label id="number-label" for="number">Age:</label><br />
-      <input type="number" id="number" name="number" required /><br /><br />
-
-      <!-- Gender -->
-      <select id="gender" name="gender">
-        <option value="gender">Select Gender</option>
-        <option value="male">Male</option>
-        <option value="female">Female</option></select
-      ><br /><br />
-
-      <!-- Where did you here us? -->
-      <p>Where did you here us?</p>
-      <input
-        type="radio"
-        id="instagram"
-        name="social-media"
-        value="instagram"
-        required
-      />
-      <label for="instagram">Instagram</label><br />
-      <input
-        type="radio"
-        id="linkedin"
-        name="social-media"
-        value="linkedin"
-        required
-      />
-      <label for="linkedin">Linkedin</label><br />
-
-      <!-- Checkbox -->
-      <input type="checkbox" id="terms" name="terms" required />
-      <label for="terms">Terms of Service</label>
-      <input type="checkbox" id="subscription" name="subscription" required />
-      <label for="subscription">Subscribe for News</label><br />
-
-      <!-- Suggestions -->
-      <label for="suggestion">Suggestions</label><br />
-      <textarea id="suggestion" name="suggestion" rows="4" cols="50"></textarea
-      ><br />
-
-      <!-- Gönder-Temizle Butonları -->
-      <input type="submit" value="Gönder" />
-      <input type="reset" value="Temizle" />
-    </form>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1 id="title">Registration Form</h1>
+            <p id="description">Please fill the form</p>
+            <form id="survey-form" action="./index.html" method="get">
+                <div class="inputgroup">
+                    <label for="name-label">Name</label>
+                    <input id="name" type="text" placeholder="Name" required>
+                </div>
+                <div class="inputgroup">
+                    <label for="email-label">E-Mail</label>
+                    <input id="email" type="email" placeholder="E-Mail" required>
+                </div>
+                <div class="inputgroup">
+                    <label for="number-label">Age</label>
+                    <input id="number" type="number" placeholder=" Age" min="10" max="100">
+                </div>
+                <div class="inputgroup">
+                    <label for="select-label">Gender</label>
+                    <select name="select" id="select">
+                        <option disabled selected hidden>Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="radio">
+                    <label for="">Where did you hear us?</label>
+                    <div>
+                        <input type="radio" name="option" value="1"> Instagram
+                        <input type="radio" name="option" value="2"> Linked-in
+                        <input type="radio" name="option" value="3"> Twitter
+                        <input type="radio" name="option" value="4"> Other
+                    </div>
+                </div>
+                <div class="tos">
+                    <input type="checkbox" required> I have read and understand "Terms of service"
+                    <input type="checkbox"> I want to receive E-mail notifications
+                </div>
+                <div class="">
+                    <textarea name="suggestions" placeholder="Suggestions"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
 </html>

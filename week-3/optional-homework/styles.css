@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+}
+
+.hero {
+    margin-top: 50px;
+    align-content: center;
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(71, 71, 71);
+}
+
+
+#title {
+    font-weight: 600;
+    padding-top: 30px;
+}
+
+#description {
+    padding-top: 10px;
+}
+
+#survey-form {
+    padding-top: 50px;
+    display: block;
+    text-align: left;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inputgroup {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.radio {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center
+}
+
+.radio input {
+    margin: 5px;
+    margin-top: 15px;
+}
+
+.inputgroup input {
+    margin: 3px;
+    width: 80%;
+    height: 40px;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+select {
+    margin-top: 3px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 40px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.tos {
+    display: block;
+    margin-left: 82px;
+    margin-right: 70px;
+}
+
+textarea {
+    margin-top: 20px;
+    border: 3px solid gray;
+    border-radius: 5px;
+    width: 400px;
+    height: 100px;
+    margin-left: 50px;
+    resize: none;
+}
+
+button {
+    background-color: dodgerblue;
+    border: 3px;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 400px;
+    height: auto;
+    margin: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+}
+
+button:hover {
+    background-color:rgb(78, 167, 255);
+}
+
+button:active {
+    background-color: rgb(11, 122, 233);
+}
+
+
+
+
