@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+h1 {
+    color: crimson;
+    text-align: center;
+    margin-top: 56px;
+    font-weight: 900;
+    font-size: 4rem;
+    font-family: "Asap", sans-serif;
+    letter-spacing: 0.075ch;
+    -webkit-text-stroke: 2px white;
+    text-shadow: 0 0 4px rgba(128, 128, 128, 0.699);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: rgb(246, 246, 246);
+    width: 60%;
+    height: auto;
+    border: 3px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(205, 205, 205, 0.466);
+}
+
+#textbox {
+    height: 40px;
+    width: 50%;
+    margin: 15px;
+    border: 3px solid white;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+button {
+    color: white;
+    font-family: "Asap" , sans-serif;
+    height: 40px;
+    width: 120px;
+    background-color: crimson;
+    border: 3px solid crimson;
+    border-radius: 5px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(248, 40, 81);
+    border-color: rgb(248, 40, 81);
+}
+button:active {
+    background-color: rgb(177, 8, 42);
+    border-color: rgb(177, 8, 42);
+}
+
+hr {
+    color: crimson;
+}
+
+ul {
+    margin-top: 30px;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 40px;
+    margin: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    list-style: none;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+ul li:hover {
+    background-color: rgb(220, 220, 220);
+}
+
+.completed {
+    color: white;
+    background-color: rgb(92, 203, 67);
+}
+.completed:hover {
+    color: white;
+    background-color: rgb(98, 226, 69);
+}
+
+#toast {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    padding: 20px;
+    background-color: crimson;
+    color: white;
+    background-color: crimson;
+    border-radius: 5px;  
+}
+
+ul li span {
+    font-size: 24px;
+    padding-left: 7px;
+    padding-right: 7px;
+    color: black;
+    background-color: rgb(235, 235, 235);
+    border-radius: 50%;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+ul li span:hover {
+    color: white;
+    background-color: crimson;
+}
+
